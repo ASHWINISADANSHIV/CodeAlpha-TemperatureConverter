@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Tilt+Prism&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumar One', cursive;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     background-color: #e2cedb;
+}
+
+.container {
+    max-width: 550px;
+    background: #2c282b;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 15px rgba(216, 55, 189, 0.4);
+    font-family: sans-serif;
+    padding: 20px;
+    color: #110e0e; 
+}
+.container:hover {
+    background: linear-gradient(white,rgb(112, 98, 112));
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+.Temperature-icon {
+    font-size: 45px;
+    color: #cb7cad;
+}
+
+h1 {
+    border: 2px solid rgb(58, 11, 25);
+    margin: 5px;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 30px;
+    background: linear-gradient(rgb(208, 148, 208),white);
+    letter-spacing: 1.2px;
+}
+h1:hover{
+    background:linear-gradient(white,rgb(208, 148, 208));
+}
+#celsius, #fahrenheit, #kelvin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    /* color: rgb(144, 84, 149); */
+}
+
+input {
+    flex: 5;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 10px;
+    padding: 0 10px;
+}
+input:hover{
+background: rgb(246, 242, 246);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.icon {
+    flex: 1;
+    height: 40px;
+    line-height: 50px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background: #b0126e;
+    color: #fffcfc;
+    border-radius: 0 8px 8px 0;
+}
+
+.button {
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.button button {
+    border: 2px solid purple;
+    
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #c861a4;
+    color: #fff;
+}
+
+.button button:hover {
+    background: #f0e7e7;
+    color: #0e0d0d;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .button button {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+}
